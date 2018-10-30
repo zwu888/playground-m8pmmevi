@@ -1,19 +1,15 @@
-# Welcome!
-
-This C++ template lets you get started quickly with a simple one-page playground.
-
 ```C++ runnable
-#include <iostream>
+#include <cstdio>
 
-using namespace std;
+void foo(int v1, int v2, int v3, int v4)
+ {
+    printf("%d %d %d %d\n",v1,v2,v3,v4);
+ }
 
-int main() 
-{
-    cout << "Hello, World!";
+ int main()
+ {
+    int lut[] = { 1, 2, 3, 4 };
+    int idx = 0;
+    foo(lut[idx++],lut[idx++],lut[idx++],lut[idx++]);
     return 0;
-}
-```
-
-# Advanced usage
-
-If you want a more complex example (external libraries, viewers...), use the [Advanced C++ template](https://tech.io/select-repo/598)
+ }
